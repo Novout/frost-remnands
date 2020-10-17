@@ -1,4 +1,4 @@
-name: CI - Deplohy GH Pages
+name: CI - Deploy GH Pages
 
 on:
   push:
