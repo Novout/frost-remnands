@@ -31,6 +31,16 @@ export default {
     '@nuxtjs/composition-api',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
+    [
+      '@nuxtjs/fontawesome',
+      {
+        component: 'fa',
+        suffix: true,
+        proIcons: {
+          solid: ['faHome'],
+        },
+      },
+    ],
   ],
 
   modules: ['@nuxt/content', 'nuxt-i18n', '@nuxt/image'],
