@@ -22,8 +22,6 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.9.0",
-    "@nuxtjs/composition-api": "^0.13.4",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.3"
@@ -33,6 +31,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@nuxtjs/composition-api": "^0.13.4",
+    "@nuxt/content": "^1.10.0",
     "@nuxt/image": "^0.0.3",
     "@nuxtjs/color-mode": "^2.0.0",
     "@nuxtjs/eslint-config": "^3.1.0",
