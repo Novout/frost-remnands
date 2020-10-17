@@ -33,7 +33,7 @@ export default {
     '@nuxtjs/google-fonts',
   ],
 
-  modules: ['@nuxt/content', 'nuxt-i18n'],
+  modules: ['@nuxt/content', 'nuxt-i18n', '@nuxt/image'],
   i18n: {
     locales: [
       {
