@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore --fix",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style"
   },
   "lint-staged": {
@@ -40,6 +40,7 @@
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/google-fonts": "^1.1.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
+    "autoprefixer": "^9.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",

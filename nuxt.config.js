@@ -89,4 +89,13 @@ export default {
   generate: {
     interval: 2000,
   },
+
+  build: {
+    postcss: {
+      plugins: {
+        autoprefixer: {},
+      },
+      preset: {},
+    },
+  },
 }
