@@ -42,10 +42,10 @@ export default defineComponent({})
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  font-family: 'Poppins', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;

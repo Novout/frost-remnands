@@ -30,6 +30,7 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/composition-api',
     '@nuxtjs/color-mode',
+    '@nuxtjs/google-fonts',
   ],
 
   modules: ['@nuxt/content', 'nuxt-i18n'],
@@ -59,6 +60,18 @@ export default {
 
   router: {
     base: '/frost-remnands/',
+  },
+
+  googleFonts: {
+    families: {
+      Poppins: {
+        wght: [700, 400],
+        ital: [100],
+      },
+      Raleway: {
+        wght: [100, 400],
+      },
+    },
   },
 
   content: {},
