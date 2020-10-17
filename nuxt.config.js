@@ -31,19 +31,11 @@ export default {
     '@nuxtjs/composition-api',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
-    [
-      '@nuxtjs/fontawesome',
-      {
-        component: 'fa',
-        suffix: true,
-        proIcons: {
-          solid: ['faHome'],
-        },
-      },
-    ],
+    '@nuxtjs/fontawesome',
   ],
 
   modules: ['@nuxt/content', 'nuxt-i18n', '@nuxt/image'],
+
   i18n: {
     locales: [
       {
@@ -81,6 +73,14 @@ export default {
       Raleway: {
         wght: [100, 400],
       },
+    },
+  },
+
+  fontawesome: {
+    component: 'fa',
+    suffix: true,
+    icons: {
+      solid: ['faHome'],
     },
   },
 
