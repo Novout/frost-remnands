@@ -1,55 +1,48 @@
 <template>
   <div>
-    <Nuxt />
+    <section>
+      <h1>Color mode: {{ $colorMode.value }}</h1>
+      <select v-model="$colorMode.preference">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="sepia">Sepia</option>
+      </select>
+      <nuxt-link
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)"
+        >{{ locale.name }}
+      </nuxt-link>
+    </section>
+    <main>
+      <Nuxt />
+    </main>
   </div>
 </template>
 
+<script>
+export default {
+  colorMode: 'dark',
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
+  },
+}
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+body {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.dark-mode body {
+  background-color: #091a28;
+  color: #ebf4f1;
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.sepia-mode body {
+  background-color: #f1e7d0;
+  color: #433422;
 }
 </style>

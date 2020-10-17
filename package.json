@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore --fix",
     "lint": "yarn lint:js && yarn lint:style"
   },
   "lint-staged": {
@@ -31,6 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@nuxtjs/color-mode": "^2.0.0",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",

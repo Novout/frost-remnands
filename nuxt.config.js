@@ -10,7 +10,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/frost-remnands/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/frost-remnands/favicon.ico',
+      },
+    ],
   },
 
   css: [],
@@ -23,19 +29,23 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/composition-api',
+    '@nuxtjs/color-mode',
   ],
 
   modules: ['@nuxt/content', 'nuxt-i18n'],
   i18n: {
     locales: [
-    {
-      code: 'br',
-      iso: 'br',
-    },
-    {
-      code: 'en',
-      iso: 'en',
-    }],
+      {
+        name: 'Português',
+        code: 'br',
+        iso: 'br',
+      },
+      {
+        name: 'English',
+        code: 'en',
+        iso: 'en',
+      },
+    ],
     defaultLocale: 'br',
     vueI18n: {
       fallbackLocale: 'br',
@@ -44,7 +54,7 @@ export default {
         en,
       },
     },
-    seo: true
+    seo: true,
   },
 
   router: {
