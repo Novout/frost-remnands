@@ -1,5 +1,3 @@
 export default {
-  br: {
-    test: 'Apenas um Teste',
-  },
+  test: 'Apenas um Teste',
 }

@@ -10,7 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/frost-remnands/favicon.ico' }],
   },
 
   css: [],
@@ -27,15 +27,24 @@ export default {
 
   modules: ['@nuxt/content', 'nuxt-i18n'],
   i18n: {
-    locales: ['br', 'en'],
+    locales: [
+    {
+      code: 'br',
+      iso: 'br',
+    },
+    {
+      code: 'en',
+      iso: 'en',
+    }],
     defaultLocale: 'br',
     vueI18n: {
       fallbackLocale: 'br',
       messages: {
-        ...br,
-        ...en,
+        br,
+        en,
       },
     },
+    seo: true
   },
 
   router: {

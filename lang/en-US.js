@@ -1,5 +1,3 @@
 export default {
-  en: {
-    test: 'Some Test',
-  },
+  test: 'Some Test',
 }
