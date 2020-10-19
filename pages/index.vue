@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <img src="~/assets/ars-icon.png" width="40%" />
       <h1 class="title">{{ $t('test') }}</h1>
       <div class="links">
         <a
@@ -34,9 +34,9 @@ export default defineComponent({})
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 87vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
 }

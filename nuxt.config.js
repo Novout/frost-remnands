@@ -19,7 +19,7 @@ export default {
     ],
   },
 
-  css: [],
+  css: ['~/assets/main.css'],
 
   plugins: [],
 
@@ -60,6 +60,15 @@ export default {
     seo: true,
   },
 
+  image: {
+    providers: {
+      local: {
+        dir: '~/assets/images/',
+        clearCache: false,
+      },
+    },
+  },
+
   router: {
     base: '/frost-remnands/',
   },
@@ -80,7 +89,7 @@ export default {
     component: 'fa',
     suffix: true,
     icons: {
-      solid: ['faHome'],
+      solid: ['faHome', 'faAdjust', 'faLanguage'],
     },
   },
 
