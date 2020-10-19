@@ -34,7 +34,7 @@ export default {
     '@nuxtjs/fontawesome',
   ],
 
-  modules: ['@nuxt/content', 'nuxt-i18n', '@nuxt/image'],
+  modules: ['@nuxt/content', 'nuxt-i18n'],
 
   i18n: {
     locales: [
