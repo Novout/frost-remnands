@@ -14,9 +14,26 @@ body {
 :root {
   --font-primary: rgba(0, 0, 0, 0.8);
   --header-color: rgba(0, 0, 0, 0.15);
+  --background-primary: #d8d8d8;
+  --background-section: rgba(0, 0, 0, 0.5);
+}
+
+:root::-webkit-scrollbar {
+  width: 12px;
+}
+:root::-webkit-scrollbar-track {
+  background:var(--background-primary);
+}
+:root::-webkit-scrollbar-thumb {
+  background: var(--font-primary);
+}
+:root::-webkit-scrollbar-thumb:hover {
+  background: var(--header-color);
 }
 
 .dark-mode {
   --font-primary: #ebf4f1;
   --header-color: rgba(0, 0, 0, 0.15);
+  --background-primary: #35495e;
+  --background-section: rgba(0, 0, 0, 0.5);
 }

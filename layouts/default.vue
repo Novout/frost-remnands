@@ -60,11 +60,11 @@ body {
   padding: 3vh 10vw;
   height: 5vh;
   max-width: 100%;
-  box-shadow: 0 5px 5px -6px rgba(0, 0, 0, 0.75);
 }
 
 .header > h1 {
   font-weight: 700;
+  pointer-events: none;
 }
 
 .header > section {
@@ -118,7 +118,7 @@ body {
   }
 
   .header > section {
-    width: 100%;
+    width: 100vw;
     padding: 0;
   }
 
