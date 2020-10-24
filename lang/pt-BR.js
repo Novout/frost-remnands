@@ -8,6 +8,15 @@ export default {
     description: 'Universo Sci-Fi Pós-Apocalíptico',
     title: 'Frost Remnands',
   },
+  footer: {
+    title: 'Test',
+    cardRpg: {
+      title: 'Test',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id mi a neque luctus pellentesque. In hac habitasse platea dictumst. Aliquam metus metus, ullamcorper et nibh et, iaculis lacinia neque.',
+      to: 'Go',
+    },
+  },
   about: {
     first: {
       title: 'O que é Frost Remnands',

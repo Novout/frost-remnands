@@ -13,9 +13,22 @@ body {
 
 :root {
   --font-primary: rgba(0, 0, 0, 0.8);
+  --font-secondary: #000;
   --header-color: rgba(0, 0, 0, 0.15);
   --background-primary: #d8d8d8;
+  --background-secondary: #FFF;
   --background-section: rgba(0, 0, 0, 0.5);
+  --background-footer: #d8d8d8;
+}
+
+.dark-mode {
+  --font-primary: #ebf4f1;
+  --font-secondary: #FFF;
+  --header-color: rgba(0, 0, 0, 0.15);
+  --background-primary: #35495e;
+  --background-secondary: #161616;
+  --background-section: rgba(0, 0, 0, 0.5);
+  --background-footer: #35495e;
 }
 
 :root::-webkit-scrollbar {
@@ -29,11 +42,4 @@ body {
 }
 :root::-webkit-scrollbar-thumb:hover {
   background: var(--header-color);
-}
-
-.dark-mode {
-  --font-primary: #ebf4f1;
-  --header-color: rgba(0, 0, 0, 0.15);
-  --background-primary: #35495e;
-  --background-section: rgba(0, 0, 0, 0.5);
 }

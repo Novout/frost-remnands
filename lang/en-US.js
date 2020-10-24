@@ -4,6 +4,18 @@ export default {
     rpg: 'RPG',
     news: 'News',
   },
+  initial: {
+    description: 'Post-Apocalyptic Sci-Fi Universe',
+    title: 'Frost Remnands',
+  },
+  footer: {
+    title: 'Test',
+    cardRpg: {
+      title: 'Test',
+      description: 'Test',
+      to: 'Go',
+    },
+  },
   about: {
     first: {
       title: "What's is Frost Remnands",
