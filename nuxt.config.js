@@ -19,7 +19,7 @@ export default {
     ],
   },
 
-  css: ['~/assets/main.css'],
+  css: ['~/assets/main.css', '~/assets/components.css'],
 
   plugins: [],
 
@@ -35,7 +35,7 @@ export default {
     '@nuxtjs/html-validator',
   ],
 
-  modules: ['@nuxt/content', 'nuxt-i18n'],
+  modules: ['nuxt-i18n'],
 
   i18n: {
     locales: [
@@ -77,11 +77,13 @@ export default {
   googleFonts: {
     families: {
       Poppins: {
-        wght: [700, 400],
-        ital: [100],
+        wght: [400, 700],
+      },
+      Roboto: {
+        wght: [100, 400, 700],
       },
       Raleway: {
-        wght: [100, 400],
+        wght: [100, 400, 700],
       },
     },
   },
@@ -106,6 +108,31 @@ export default {
         autoprefixer: {},
       },
       preset: {},
+    },
+  },
+
+  htmlValidator: {
+    usePrettier: false,
+    options: {
+      extends: [
+        'html-validate:document',
+        'html-validate:recommended',
+        'html-validate:standard',
+      ],
+      rules: {
+        'svg-focusable': 'off',
+        'no-unknown-elements': 'error',
+        // Conflicts or not needed when using prettier formatting
+        'void-style': 'off',
+        'no-trailing-whitespace': 'off',
+        // Conflict with Nuxt defaults
+        'require-sri': 'off',
+        'attribute-boolean-style': 'off',
+        // Unreasonable rule
+        'no-inline-style': 'off',
+        'heading-level': 'off',
+        'attribute-allowed-values': 'off',
+      },
     },
   },
 }

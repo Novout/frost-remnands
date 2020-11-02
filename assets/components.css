@@ -1,0 +1,21 @@
+.button-primary {
+  font-family: 'Raleway', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 14px 48px;
+  appearance: button;
+  text-decoration: none;
+  background-color: var(--button-background-primary);
+  color: var(--button-text-primary);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 6rem;
+}
+
+.button-primary:hover {
+  background-color: var(--button-background-primary-hover);
+  color: var(--button-text-primary-hover);
+}

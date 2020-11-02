@@ -1,0 +1,40 @@
+<template>
+  <section id="main">
+    <Header />
+    <main>
+      <Nuxt />
+    </main>
+  </section>
+</template>
+
+<script>
+import { defineComponent } from '@nuxtjs/composition-api'
+import Header from '@/components/Header'
+
+export default defineComponent({
+  colorMode: 'dark',
+  components: {
+    Header,
+  },
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
+  },
+})
+</script>
+
+<style>
+body {
+  background: url('../assets/landing.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--font-primary);
+}
+
+.dark-mode body {
+  background: url('../assets/landing_black.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
