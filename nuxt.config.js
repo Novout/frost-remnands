@@ -32,6 +32,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
     '@nuxtjs/fontawesome',
+    '@nuxtjs/html-validator',
   ],
 
   modules: ['@nuxt/content', 'nuxt-i18n'],
