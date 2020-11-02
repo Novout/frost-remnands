@@ -38,6 +38,15 @@ export default {
   modules: ['nuxt-i18n'],
 
   i18n: {
+    detectBrowserLanguage: {
+      alwaysRedirect: false,
+      fallbackLocale: '/frost-remnands/',
+      onlyOnRoot: true,
+      useCookie: true,
+      cookieCrossOrigin: false,
+      cookieKey: 'i18n_redirected',
+      cookieSecure: false,
+    },
     locales: [
       {
         name: 'Português',
