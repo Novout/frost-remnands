@@ -1,5 +1,5 @@
 {
-  "name": "frost-remnands-website",
+  "name": "frost-remnands",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -22,8 +22,6 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.9.0",
-    "@nuxtjs/composition-api": "^0.13.4",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.3"
@@ -31,9 +29,18 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@nuxt/content": "^1.10.0",
+    "@nuxtjs/color-mode": "^2.0.0",
+    "@nuxtjs/composition-api": "^0.13.4",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/google-fonts": "^1.1.0",
+    "@nuxtjs/html-validator": "^0.1.1",
     "@nuxtjs/stylelint-module": "^4.0.0",
+    "autoprefixer": "^9.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",

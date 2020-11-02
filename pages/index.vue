@@ -1,65 +1,116 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">{{ $t('test') }}</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <section class="container">
+    <div id="initial" class="container__initial">
+      <img
+        src="~/assets/ars-icon.png"
+        width="15%"
+        :alt="$i18n.t('default.img.main')"
+      />
+      <h2>{{ $t('initial.description') }}</h2>
+      <h1>{{ $t('initial.title') }}</h1>
+      <a
+        class="button-primary"
+        :href="$route.path.includes('/en') ? 'en#about' : '#about'"
+        >{{ $t('initial.about') }}</a
+      >
     </div>
-  </div>
+    <div id="about" class="container__about">
+      <section>
+        <h3>{{ $t('about.first.title') }}</h3>
+        <p>
+          {{ $t('about.first.description1') }}
+        </p>
+        <p>
+          {{ $t('about.first.description2') }}
+        </p>
+        <h4>
+          {{ $t('about.second.title') }}
+        </h4>
+        <p>
+          {{ $t('about.second.description1') }}
+        </p>
+        <p>
+          {{ $t('about.second.description2') }}
+        </p>
+        <nuxt-link class="button-primary" :to="localePath({ name: 'rpg' })">{{
+          $t('about.second.rpg')
+        }}</nuxt-link>
+      </section>
+    </div>
+  </section>
 </template>
 
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
 
-export default defineComponent({})
+export default defineComponent({
+  head() {
+    return {
+      title: this.$i18n.t('default.head.index'),
+    }
+  },
+})
 </script>
 
-<style>
+<style scoped>
 .container {
+  overflow-x: hidden;
+}
+
+.container__initial {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 89vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.container__initial > h1 {
+  font-size: 6rem;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.container__initial > h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
-.links {
-  padding-top: 15px;
+.container__about {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--background-clean);
+}
+
+.container__about > section {
+  padding: 5rem;
+  height: auto;
+}
+
+.container__about > section > h3 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid var(--font-primary);
+}
+
+.container__about > section > h4 {
+  margin-top: 40px;
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--font-primary);
+}
+
+.container__about > section > p {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container__about > section {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container__initial > h1 {
+    font-size: 2em;
+  }
 }
 </style>

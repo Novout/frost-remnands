@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Poppins', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+:root {
+  --font-primary: rgba(0, 0, 0, 0.8);
+  --font-secondary: #000;
+  --header-color: rgba(0, 0, 0, 0.15);
+  --background-primary: #d8d8d8;
+  --background-secondary: #FFF;
+  --background-section: rgba(0, 0, 0, 0.5);
+  --background-footer: #d8d8d8;
+  --background-clean: #FFF;
+  --button-background-primary-hover: #b5d6fa;
+  --button-text-primary-hover: #000;
+  --button-background-primary: #35495e;
+  --button-text-primary: #FFF;
+  --footer-background: #000;
+  --footer-text: #FFF;
+}
+
+.dark-mode {
+  --font-primary: #ebf4f1;
+  --font-secondary: #FFF;
+  --header-color: rgba(0, 0, 0, 0.15);
+  --background-primary: #35495e;
+  --background-secondary: #161616;
+  --background-section: rgba(0, 0, 0, 0.5);
+  --background-footer: #35495e;
+  --background-clean: #000;
+  --button-background-primary-hover: #2f4966;
+  --button-text-primary-hover: #FFF;
+  --button-background-primary: #FFF;
+  --button-text-primary: #000;
+  --footer-background: #FFF;
+  --footer-text: #000;
+}
+
+:root::-webkit-scrollbar {
+  width: 12px;
+}
+:root::-webkit-scrollbar-track {
+  background:var(--background-primary);
+}
+:root::-webkit-scrollbar-thumb {
+  background: var(--font-primary);
+}
+:root::-webkit-scrollbar-thumb:hover {
+  background: var(--header-color);
+}

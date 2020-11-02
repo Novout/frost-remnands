@@ -1,55 +1,103 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+  <section id="main">
+    <Header />
+    <main>
+      <Nuxt />
+    </main>
+    <footer class="footer">
+      <a
+        :href="$route.path === '/' ? '#header' : localePath({ name: 'index' })"
+        >{{ $t('footer.home') }}</a
+      >
+      <nuxt-link :to="localePath({ name: 'rpg' })">{{
+        $t('footer.rpg')
+      }}</nuxt-link>
+      <nuxt-link :to="localePath({ name: 'news' })">{{
+        $t('footer.news')
+      }}</nuxt-link>
+    </footer>
+  </section>
 </template>
 
+<script>
+import { defineComponent } from '@nuxtjs/composition-api'
+import Header from '@/components/Header'
+
+export default defineComponent({
+  components: {
+    Header,
+  },
+})
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+body {
+  background: url('../assets/landing.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--font-primary);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.dark-mode body {
+  background: url('../assets/landing_black.png');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-background);
+  height: 8vh;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.footer > a {
+  color: var(--footer-text);
   text-decoration: none;
-  padding: 10px 30px;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+@media (max-width: 1200px) {
+  .header {
+    padding: 3vh 5vw;
+  }
+
+  .header > section > a {
+    padding: 0 5px;
+  }
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
+@media (max-width: 768px) {
+  .header {
+    padding: 3vh 0;
+  }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  .header > h1 {
+    display: none;
+  }
+
+  .header > section {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .header > section > a {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer > a {
+    font-size: 0.9rem;
+  }
 }
 </style>
