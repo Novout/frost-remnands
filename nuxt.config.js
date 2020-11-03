@@ -39,13 +39,10 @@ export default {
 
   i18n: {
     detectBrowserLanguage: {
-      alwaysRedirect: false,
-      fallbackLocale: '/frost-remnands/',
-      onlyOnRoot: true,
-      useCookie: true,
-      cookieCrossOrigin: false,
-      cookieKey: 'i18n_redirected',
-      cookieSecure: false,
+      cookieDomain:
+        process.env.NODE_ENV === 'production'
+          ? 'novout.github.io/frost-remnands'
+          : null,
     },
     locales: [
       {
