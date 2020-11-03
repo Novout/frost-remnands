@@ -38,12 +38,7 @@ export default {
   modules: ['nuxt-i18n'],
 
   i18n: {
-    detectBrowserLanguage: {
-      cookieDomain:
-        process.env.NODE_ENV === 'production'
-          ? 'novout.github.io/frost-remnands'
-          : null,
-    },
+    detectBrowserLanguage: false,
     locales: [
       {
         name: 'Português',
