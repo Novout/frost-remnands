@@ -12,12 +12,12 @@
         $t('header.news')
       }}</nuxt-link>
       <fa-icon icon="adjust" size="2x" @click.prevent="colorMode" />
-      <nuxt-link
+      <a
         v-for="locale in availableLocales"
         :key="locale.code"
-        :to="switchLocalePath(locale.code)"
+        @click.prevent="switchLanguage(locale.code)"
         ><fa-icon icon="language" size="2x" />{{ locale.name }}
-      </nuxt-link>
+      </a>
     </section>
   </header>
 </template>
@@ -41,6 +41,15 @@ export default defineComponent({
       this.$colorMode.preference === 'light'
         ? (this.$colorMode.preference = 'dark')
         : (this.$colorMode.preference = 'light')
+    },
+    switchLanguage(code) {
+      if (this.$route.fullPath.includes('#about')) {
+        if (this.$route.fullPath.includes('/en')) this.$router.push('/')
+        else this.$router.push('/en')
+
+        return
+      }
+      this.$router.push(this.switchLocalePath(code))
     },
   },
 })
