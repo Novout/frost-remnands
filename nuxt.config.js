@@ -96,7 +96,18 @@ export default {
     component: 'fa',
     suffix: true,
     icons: {
-      solid: ['faHome', 'faAdjust', 'faLanguage'],
+      solid: [
+        'faHome',
+        'faAdjust',
+        'faLanguage',
+        'faCat',
+        'faDragon',
+        'faGlobe',
+        'faMountain',
+        'faFlag',
+        'faCloud',
+        'faTrophy',
+      ],
     },
   },
 
@@ -134,6 +145,7 @@ export default {
         'no-inline-style': 'off',
         'heading-level': 'off',
         'attribute-allowed-values': 'off',
+        'no-dup-attr': 'off',
       },
     },
   },

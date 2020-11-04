@@ -1,5 +1,7 @@
 <template>
-  <p>Test</p>
+  <section id="rpg">
+    <nuxt-child />
+  </section>
 </template>
 
 <script>
@@ -14,3 +16,12 @@ export default defineComponent({
   },
 })
 </script>
+
+<style scoped>
+#rpg {
+  width: 100%;
+  overflow-y: auto;
+  padding: 0 100px;
+  background-color: var(--rpg-background);
+}
+</style>

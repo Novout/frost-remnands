@@ -27,6 +27,9 @@ body {
   --button-text-primary: #FFF;
   --footer-background: #000;
   --footer-text: #FFF;
+  --aside-background: #FFF;
+  --aside-hover: #b5d6fa;
+  --rpg-background: #FFF;
 }
 
 .dark-mode {
@@ -38,12 +41,15 @@ body {
   --background-section: rgba(0, 0, 0, 0.5);
   --background-footer: #35495e;
   --background-clean: #000;
-  --button-background-primary-hover: #2f4966;
+  --button-background-primary-hover: #35495e;
   --button-text-primary-hover: #FFF;
   --button-background-primary: #FFF;
   --button-text-primary: #000;
   --footer-background: #FFF;
   --footer-text: #000;
+  --aside-background: #181818;
+  --aside-hover: #35495e;
+  --rpg-background: #121212;
 }
 
 :root::-webkit-scrollbar {

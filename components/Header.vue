@@ -57,8 +57,8 @@ export default defineComponent({
   justify-content: space-between;
   align-items: center;
   background: var(--header-color);
-  padding: 3vh 10vw;
-  height: 5vh;
+  padding: 0 10vw;
+  min-height: 90px;
   max-width: 100%;
   overflow-y: none;
 }
@@ -106,10 +106,6 @@ export default defineComponent({
 }
 
 @media (max-width: 1200px) {
-  .header {
-    padding: 3vh 5vw;
-  }
-
   .header > section > a {
     padding: 0 5px;
   }
@@ -120,10 +116,6 @@ export default defineComponent({
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding: 3vh 0;
-  }
-
   .header > h1 {
     display: none;
   }

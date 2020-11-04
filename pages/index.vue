@@ -66,7 +66,7 @@ export default defineComponent({
 
 .container__initial {
   margin: 0 auto;
-  min-height: 89vh;
+  min-height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -84,7 +84,7 @@ export default defineComponent({
 }
 
 .container__about {
-  min-height: 100vh;
+  min-height: calc(100vh - 90px);
   min-width: 100vw;
   background-color: var(--background-clean);
 }

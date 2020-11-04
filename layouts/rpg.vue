@@ -2,6 +2,7 @@
   <section id="main">
     <Header />
     <main>
+      <Sidebar />
       <Nuxt />
     </main>
   </section>
@@ -10,11 +11,13 @@
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
 import Header from '@/components/Header'
+import Sidebar from '@/components/rpg/Sidebar'
 
 export default defineComponent({
   colorMode: 'dark',
   components: {
     Header,
+    Sidebar,
   },
   computed: {
     availableLocales() {
@@ -24,17 +27,8 @@ export default defineComponent({
 })
 </script>
 
-<style>
-body {
-  background: url('../assets/landing.png');
-  background-size: cover;
-  background-attachment: fixed;
-  color: var(--font-primary);
-}
-
-.dark-mode body {
-  background: url('../assets/landing_black.png');
-  background-size: cover;
-  background-attachment: fixed;
+<style scoped>
+main {
+  display: flex;
 }
 </style>
