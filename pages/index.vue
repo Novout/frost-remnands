@@ -23,6 +23,13 @@
         <p>
           {{ $t('about.first.description2') }}
         </p>
+        <a
+          class="button-primary"
+          href="https://www.moddb.com/mods/arsa-random-story"
+          target="_blank"
+          rel="noopener"
+          >{{ $t('about.first.mod') }}</a
+        >
         <h4>
           {{ $t('about.second.title') }}
         </h4>

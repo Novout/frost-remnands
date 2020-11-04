@@ -28,6 +28,7 @@ export default {
         'Criador por Giovane "Novout" Cardoso em 2015, Frost Remnands (Restos da Geada) é um cenário Sci-fi pós-apocalíptico, sendo inicialmente um MOD para o jogo Hearts of Iron IV no ano de 2018 com o nome de ARS: Project, e se tornando futuramente Frost Remnands. Devido a isso, o cenário possui referências a diversos tipos de fantasias e tenta trazer conceitos novos.',
       description2:
         'FR - Frost Remnants começa em 1100 Nova Era, sendo um calendário de uma das nações do continente de Zyerano, com nações significantes existentes e já tendo um nível social elevado. Frost Remnands se difere no conceito da quase inexistência de maniqueísmo, tendo todas as crenças e vontades baseado exclusivamente pela sobrevivência, por mais que cada vez mais nações pretendem mudar este conceito.',
+      mod: 'Ir para ARS: Project',
     },
     second: {
       title: 'RPG',

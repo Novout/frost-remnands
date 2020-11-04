@@ -26,11 +26,6 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  head() {
-    return {
-      title: this.$i18n.t('default.head.news'),
-    }
-  },
   computed: {
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
