@@ -4,9 +4,9 @@ export default {
       main: 'Logo of ARS-Project and Frost Remnands',
     },
     head: {
-      index: 'Frost Remnands - Início',
-      rpg: 'Frost Remnands - RPG',
-      news: 'Frost Remnands - Novidades',
+      index: 'Restos da Geada - Início',
+      rpg: 'Restos da Geada - RPG',
+      news: 'Restos da Geada - Novidades',
     },
   },
   header: {
