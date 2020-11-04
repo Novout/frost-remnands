@@ -86,6 +86,9 @@ export default {
       Raleway: {
         wght: [100, 400, 700],
       },
+      Montserrat: {
+        wght: [400, 500, 700],
+      },
     },
   },
 
@@ -96,8 +99,6 @@ export default {
       solid: ['faHome', 'faAdjust', 'faLanguage'],
     },
   },
-
-  content: {},
 
   generate: {
     interval: 2000,
