@@ -34,6 +34,7 @@ export default defineComponent({
 .item {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 25px;
   width: 100%;
   cursor: pointer;

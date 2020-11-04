@@ -1,7 +1,11 @@
 <template>
   <footer class="footer">
     <a
-      :href="$route.path === '/' ? '#header' : localePath({ name: 'index' })"
+      :href="
+        $route.path === '/' || $route.path === '/en'
+          ? '#header'
+          : localePath({ name: 'index' })
+      "
       >{{ $t('footer.home') }}</a
     >
     <nuxt-link :to="localePath({ name: 'rpg' })">{{
@@ -34,7 +38,7 @@ export default defineComponent({})
 .footer > a {
   color: var(--footer-text);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0 10px;
   cursor: pointer;
 }

@@ -29,13 +29,13 @@ body {
   --footer-text: #FFF;
   --aside-background: #FFF;
   --aside-hover: #b5d6fa;
-  --rpg-background: #FFF;
+  --rpg-background: rgb(240, 240, 240);
 }
 
 .dark-mode {
   --font-primary: #ebf4f1;
   --font-secondary: #FFF;
-  --header-color: rgba(0, 0, 0, 0.15);
+  --header-color: rgba(0, 0, 0, 0.25);
   --background-primary: #35495e;
   --background-secondary: #161616;
   --background-section: rgba(0, 0, 0, 0.5);

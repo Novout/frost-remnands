@@ -35,7 +35,7 @@ export default {
     '@nuxtjs/html-validator',
   ],
 
-  modules: ['nuxt-i18n'],
+  modules: ['nuxt-i18n', '@nuxt/image'],
 
   i18n: {
     detectBrowserLanguage: false,

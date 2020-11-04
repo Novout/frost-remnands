@@ -20,8 +20,13 @@ export default defineComponent({
 <style scoped>
 #rpg {
   width: 100%;
-  overflow-y: auto;
-  padding: 0 100px;
+  padding: 50px 100px;
   background-color: var(--rpg-background);
+}
+
+@media (max-width: 768px) {
+  #rpg {
+    padding: 0 15px;
+  }
 }
 </style>

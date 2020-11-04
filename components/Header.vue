@@ -60,6 +60,7 @@ export default defineComponent({
   padding: 0 10vw;
   min-height: 90px;
   max-width: 100%;
+  box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.1);
   overflow-y: none;
 }
 
@@ -88,6 +89,7 @@ export default defineComponent({
   padding: 0 20px;
   text-decoration: none;
   transition: all 0.15s ease;
+  cursor: pointer;
 }
 
 .header > section > a:hover {

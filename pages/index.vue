@@ -75,6 +75,7 @@ export default defineComponent({
 }
 
 .container__initial > h1 {
+  background: none;
   font-size: 6rem;
 }
 
@@ -84,7 +85,7 @@ export default defineComponent({
 }
 
 .container__about {
-  min-height: calc(100vh - 90px);
+  min-height: 100vh;
   min-width: 100vw;
   background-color: var(--background-clean);
 }
