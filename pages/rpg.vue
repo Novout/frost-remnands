@@ -24,7 +24,7 @@ export default defineComponent({
   background-color: var(--rpg-background);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #rpg {
     padding: 0 15px;
   }

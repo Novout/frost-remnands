@@ -199,13 +199,13 @@
 }
 
 .credits > h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   border-bottom: 2px solid var(--footer-background);
   pointer-events: none;
 }
 
 .credits > h2 {
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-bottom: 1px solid var(--footer-background);
   pointer-events: none;
 }

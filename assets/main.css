@@ -30,6 +30,11 @@ body {
   --aside-background: #FFF;
   --aside-hover: #b5d6fa;
   --rpg-background: rgb(240, 240, 240);
+  --rpg-card: #b5d6fa;
+  --rpg-button: #35495e;
+  --rpg-button-hover: rgb(255, 255, 255);
+  --rpg-button-disabled: rgba(53, 73, 94, 0.3);
+  --rpg-button-disabled-hover:  rgba(255, 255, 255, 0.3);
 }
 
 .dark-mode {
@@ -50,6 +55,11 @@ body {
   --aside-background: #181818;
   --aside-hover: #35495e;
   --rpg-background: #121212;
+  --rpg-card: #35495e;
+  --rpg-button: #FFF;
+  --rpg-button-hover: rgb(0, 0, 0);
+  --rpg-button-disabled: rgba(255, 255, 255, 0.3);
+  --rpg-button-disabled-hover:  rgba(0, 0, 0, 0.3);
 }
 
 :root::-webkit-scrollbar {

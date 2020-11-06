@@ -11,7 +11,7 @@
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   margin-top: 6rem;
   box-shadow:  0px 0px 25px 3px rgba(0, 0, 0, 0.2);
 }
@@ -19,4 +19,142 @@
 .button-primary:hover {
   background-color: var(--button-background-primary-hover);
   color: var(--button-text-primary-hover);
+  transform: translateX(25px) rotateZ(-1deg);
+}
+
+.button-secondary {
+  font-family: 'Raleway', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 14px 48px;
+  appearance: button;
+  text-decoration: none;
+  background-color: var(--rpg-button);
+  color: var(--button-text-primary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 6rem;
+  box-shadow:  0px 0px 25px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button-secondary:hover {
+  background-color: var(--rpg-button-hover);
+  color: var(--button-text-primary-hover);
+}
+
+.button-secondary-disabled {
+  font-family: 'Raleway', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 14px 48px;
+  appearance: button;
+  text-decoration: none;
+  background-color: var(--rpg-button-disabled);
+  color: var(--button-text-primary);
+  border: none;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  margin-top: 6rem;
+  box-shadow:  0px 0px 25px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button-secondary-disabled:hover {
+  background-color: var(--rpg-button-disabled-hover);
+  color: var(--button-text-primary-hover);
+}
+
+.h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--footer-background);
+  pointer-events: none;
+}
+
+.h2 {
+  margin-top: 3rem;
+  border-bottom: 1px solid var(--footer-background);
+  pointer-events: none;
+}
+
+.h3 {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid var(--footer-background);
+  pointer-events: none;
+}
+
+.span {
+  position: relative;
+  top: 10px;
+}
+
+.container__rpg {
+  max-height: calc(100vh - 190px);
+  width: auto;
+  overflow-x: hidden;
+}
+
+.container__rpg::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container__rpg::-webkit-scrollbar-track {
+  background: var(--background-primary);
+}
+
+.container__rpg::-webkit-scrollbar-thumb {
+  background: var(--font-primary);
+}
+
+.container__rpg::-webkit-scrollbar-thumb:hover {
+  background: var(--header-color);
+}
+
+.container__card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: var(--rpg-card);
+  height: 400px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 16px;
+  width: 450px;
+  min-width: 450px;
+}
+
+@media (max-width: 1024px) {
+  .container__rpg {
+    max-height: calc(100vh - 90px);
+  }
+
+  .container__card {
+    height: 100vh;
+  }
+
+  .card {
+    height: auto;
+    width: auto;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-secondary {
+    padding: 10px 16px;
+  }
+
+  .button-secondary-disabled {
+    padding: 10px 16px;
+  }
 }

@@ -28,7 +28,7 @@
           href="https://www.moddb.com/mods/arsa-random-story"
           target="_blank"
           rel="noopener"
-          >{{ $t('about.first.mod') }}</a
+          ><p>{{ $t('about.first.mod') }}</p></a
         >
         <h4>
           {{ $t('about.second.title') }}

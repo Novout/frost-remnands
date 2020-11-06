@@ -32,7 +32,7 @@ export default defineComponent({
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  width: 300px;
+  min-width: 250px;
   background-color: var(--aside-background);
   height: calc(100vh - 90px);
   overflow-y: auto;
@@ -57,7 +57,7 @@ export default defineComponent({
 
 @media (max-width: 768px) {
   .sidebar {
-    width: 200px;
+    min-width: 120px;
   }
 }
 </style>

@@ -1,5 +1,28 @@
 export default {
   rpg: {
+    index: {
+      title: 'Conteúdos do RPG',
+      description:
+        'Todos os conteúdos de download referentes ao RPG estará disponível nesta seção.',
+      playerbook: {
+        card: {
+          title: 'PDF - Livro do Jogador SRD 5e',
+          description:
+            'Baixe o Livro do Jogador de Restos da Geada, contento tudo o que o jogador precisa para criar um personagem e jogar no universo.',
+          buttonBR: 'v0.1.0 - Português',
+          buttonEN: 'v0.1.0 - Inglês',
+        },
+      },
+      gmbook: {
+        card: {
+          title: 'PDF - Livro do Mestre SRD 5e',
+          description:
+            'Baixe o Livro do Mestre de Restos da Geada, contento tudo o que o Mestre precisa para conseguir criar uma campanha no universo.;',
+          buttonBR: 'v0.1.0 - Português',
+          buttonEN: 'v0.1.0 - Inglês',
+        },
+      },
+    },
     credits: {
       title: {
         credits: 'Créditos',
