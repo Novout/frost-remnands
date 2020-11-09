@@ -30,6 +30,20 @@
       </p>
       <p>
         {{
+          $t('rpg.credits.description.rpgSystem', {
+            msg: $i18n.t('rpg.credits.name.shadow'),
+          })
+        }}
+      </p>
+      <p>
+        {{
+          $t('rpg.credits.description.rpgSystem', {
+            msg: $i18n.t('rpg.credits.name.tormenta'),
+          })
+        }}
+      </p>
+      <p>
+        {{
           $t('rpg.credits.description.rpgLive', {
             msg: $i18n.t('rpg.credits.name.skyfall'),
           })
@@ -46,6 +60,13 @@
         {{
           $t('rpg.credits.description.rpgLive', {
             msg: $i18n.t('rpg.credits.name.dado'),
+          })
+        }}
+      </p>
+      <p>
+        {{
+          $t('rpg.credits.description.rpgLive', {
+            msg: $i18n.t('rpg.credits.name.aop'),
           })
         }}
       </p>
@@ -94,6 +115,27 @@
       <p>
         {{
           $t('rpg.credits.description.game', {
+            msg: $i18n.t('rpg.credits.name.victoria'),
+          })
+        }}
+      </p>
+      <p>
+        {{
+          $t('rpg.credits.description.game', {
+            msg: $i18n.t('rpg.credits.name.war'),
+          })
+        }}
+      </p>
+      <p>
+        {{
+          $t('rpg.credits.description.game', {
+            msg: $i18n.t('rpg.credits.name.borderlands'),
+          })
+        }}
+      </p>
+      <p>
+        {{
+          $t('rpg.credits.description.game', {
             msg: $i18n.t('rpg.credits.name.bioshock'),
           })
         }}
@@ -116,6 +158,13 @@
         {{
           $t('rpg.credits.description.game', {
             msg: $i18n.t('rpg.credits.name.divinite'),
+          })
+        }}
+      </p>
+      <p>
+        {{
+          $t('rpg.credits.description.game', {
+            msg: $i18n.t('rpg.credits.name.tlou'),
           })
         }}
       </p>

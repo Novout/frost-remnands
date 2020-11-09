@@ -33,6 +33,20 @@
           >
         </section>
       </article>
+      <article class="card">
+        <h2 class="h2">{{ $t('rpg.index.desktop.card.title') }}</h2>
+        <span>{{ $t('rpg.index.desktop.card.description') }}</span>
+        <section class="button-container">
+          <a class="button-secondary" href="https://www.dropbox.com/s/?dl=1">{{
+            $t('rpg.index.desktop.card.buttonBR')
+          }}</a>
+          <a
+            class="button-secondary-disabled"
+            href="https://www.dropbox.com/s/?dl=1"
+            >{{ $t('rpg.index.desktop.card.buttonEN') }}</a
+          >
+        </section>
+      </article>
     </section>
   </section>
 </template>
