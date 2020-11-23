@@ -45,7 +45,7 @@ body {
   --background-secondary: #161616;
   --background-section: rgba(0, 0, 0, 0.5);
   --background-footer: #35495e;
-  --background-clean: #000;
+  --background-clean: rgb(15, 15, 15);
   --button-background-primary-hover: #35495e;
   --button-text-primary-hover: #FFF;
   --button-background-primary: #FFF;

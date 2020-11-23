@@ -1,49 +1,57 @@
 <template>
   <section class="container__rpg">
-    <h1 class="h1">{{ $t('rpg.index.title') }}</h1>
-    <span class="span">{{ $t('rpg.index.description') }}</span>
+    <h1 class="h1">
+      {{ $t("rpg.index.title") }}
+    </h1>
+    <span class="span">{{ $t("rpg.index.description") }}</span>
     <section class="container__card">
       <article class="card">
-        <h2 class="h2">{{ $t('rpg.index.playerbook.card.title') }}</h2>
-        <span>{{ $t('rpg.index.playerbook.card.description') }}</span>
+        <h2 class="h2">
+          {{ $t("rpg.index.playerbook.card.title") }}
+        </h2>
+        <span>{{ $t("rpg.index.playerbook.card.description") }}</span>
         <section class="button-container">
           <a class="button-secondary" href="https://www.dropbox.com/s/?dl=1">{{
-            $t('rpg.index.playerbook.card.buttonBR')
+            $t("rpg.index.playerbook.card.buttonBR")
           }}</a>
           <a
             class="button-secondary-disabled"
             href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t('rpg.index.playerbook.card.buttonEN') }}</a
+            >{{ $t("rpg.index.playerbook.card.buttonEN") }}</a
           >
         </section>
       </article>
       <article class="card">
-        <h2 class="h2">{{ $t('rpg.index.gmbook.card.title') }}</h2>
-        <span>{{ $t('rpg.index.gmbook.card.description') }}</span>
+        <h2 class="h2">
+          {{ $t("rpg.index.gmbook.card.title") }}
+        </h2>
+        <span>{{ $t("rpg.index.gmbook.card.description") }}</span>
         <section class="button-container">
           <a
             class="button-secondary-disabled"
             href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t('rpg.index.gmbook.card.buttonBR') }}</a
+            >{{ $t("rpg.index.gmbook.card.buttonBR") }}</a
           >
           <a
             class="button-secondary-disabled"
             href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t('rpg.index.gmbook.card.buttonEN') }}</a
+            >{{ $t("rpg.index.gmbook.card.buttonEN") }}</a
           >
         </section>
       </article>
       <article class="card">
-        <h2 class="h2">{{ $t('rpg.index.desktop.card.title') }}</h2>
-        <span>{{ $t('rpg.index.desktop.card.description') }}</span>
+        <h2 class="h2">
+          {{ $t("rpg.index.desktop.card.title") }}
+        </h2>
+        <span>{{ $t("rpg.index.desktop.card.description") }}</span>
         <section class="button-container">
           <a class="button-secondary" href="https://www.dropbox.com/s/?dl=1">{{
-            $t('rpg.index.desktop.card.buttonBR')
+            $t("rpg.index.desktop.card.buttonBR")
           }}</a>
           <a
             class="button-secondary-disabled"
             href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t('rpg.index.desktop.card.buttonEN') }}</a
+            >{{ $t("rpg.index.desktop.card.buttonEN") }}</a
           >
         </section>
       </article>

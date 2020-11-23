@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent } from "@nuxtjs/composition-api";
 
 export default defineComponent({
   props: {
@@ -23,11 +23,11 @@ export default defineComponent({
     },
     to: {
       required: false,
-      default: '',
+      default: "",
       type: String,
     },
   },
-})
+});
 </script>
 
 <style scoped>

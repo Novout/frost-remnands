@@ -6,60 +6,70 @@
         width="15%"
         :alt="$i18n.t('default.img.main')"
       />
-      <h2>{{ $t('initial.description') }}</h2>
-      <h1>{{ $t('initial.title') }}</h1>
+      <h2>{{ $t("initial.description") }}</h2>
+      <h1>{{ $t("initial.title") }}</h1>
       <a
         class="button-primary"
         :href="$route.path.includes('/en') ? 'en#about' : '#about'"
-        >{{ $t('initial.about') }}</a
+        >{{ $t("initial.about") }}</a
       >
     </div>
     <div id="about" class="container__about">
       <section>
-        <h3>{{ $t('about.first.title') }}</h3>
+        <h3>{{ $t("about.first.title") }}</h3>
         <p>
-          {{ $t('about.first.description1') }}
+          {{ $t("about.first.description1") }}
         </p>
         <p>
-          {{ $t('about.first.description2') }}
+          {{ $t("about.first.description2") }}
         </p>
         <a
           class="button-primary"
           href="https://www.moddb.com/mods/arsa-random-story"
           target="_blank"
           rel="noopener"
-          ><p>{{ $t('about.first.mod') }}</p></a
+          ><p>{{ $t("about.first.mod") }}</p></a
         >
         <h4>
-          {{ $t('about.second.title') }}
+          {{ $t("about.second.title") }}
         </h4>
         <p>
-          {{ $t('about.second.description1') }}
+          {{ $t("about.second.description1") }}
         </p>
         <p>
-          {{ $t('about.second.description2') }}
+          {{ $t("about.second.description2") }}
         </p>
-        <nuxt-link class="button-primary" :to="localePath({ name: 'rpg' })">{{
-          $t('about.second.rpg')
-        }}</nuxt-link>
+        <nuxt-link class="button-primary" :to="localePath({ name: 'rpg' })">
+          {{ $t("about.second.rpg") }}
+        </nuxt-link>
       </section>
     </div>
   </section>
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent } from "@nuxtjs/composition-api";
 
 export default defineComponent({
   head() {
     return {
-      title: this.$i18n.t('default.head.index'),
-    }
+      title: this.$i18n.t("default.head.index"),
+    };
   },
-})
+});
 </script>
 
 <style scoped>
+.main-enter-active,
+.main-leave-active {
+  transition: opacity 0.5s;
+}
+
+.main-enter,
+.main-leave-to {
+  opacity: 0;
+}
+
 .container {
   overflow-x: hidden;
 }

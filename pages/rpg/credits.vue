@@ -1,219 +1,221 @@
 <template>
   <section class="credits">
-    <h1>{{ $t('rpg.credits.title.credits') }}</h1>
-    <span>{{ $t('rpg.credits.text.credits') }}</span>
-    <h2>{{ $t('rpg.credits.title.ars') }}</h2>
-    <h2>{{ $t('rpg.credits.title.fr') }}</h2>
-    <h1 class="references">{{ $t('rpg.credits.title.references') }}</h1>
-    <span>{{ $t('rpg.credits.text.references') }}</span>
+    <h1>{{ $t("rpg.credits.title.credits") }}</h1>
+    <span>{{ $t("rpg.credits.text.credits") }}</span>
+    <h2>{{ $t("rpg.credits.title.ars") }}</h2>
+    <h2>{{ $t("rpg.credits.title.fr") }}</h2>
+    <h1 class="references">
+      {{ $t("rpg.credits.title.references") }}
+    </h1>
+    <span>{{ $t("rpg.credits.text.references") }}</span>
     <section>
       <p>
         {{
-          $t('rpg.credits.description.rpgSystem', {
-            msg: $i18n.t('rpg.credits.name.srd5e'),
+          $t("rpg.credits.description.rpgSystem", {
+            msg: $i18n.t("rpg.credits.name.srd5e"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgSystem', {
-            msg: $i18n.t('rpg.credits.name.srd35e'),
+          $t("rpg.credits.description.rpgSystem", {
+            msg: $i18n.t("rpg.credits.name.srd35e"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgSystem', {
-            msg: $i18n.t('rpg.credits.name.D$D'),
+          $t("rpg.credits.description.rpgSystem", {
+            msg: $i18n.t("rpg.credits.name.D$D"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgSystem', {
-            msg: $i18n.t('rpg.credits.name.shadow'),
+          $t("rpg.credits.description.rpgSystem", {
+            msg: $i18n.t("rpg.credits.name.shadow"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgSystem', {
-            msg: $i18n.t('rpg.credits.name.tormenta'),
+          $t("rpg.credits.description.rpgSystem", {
+            msg: $i18n.t("rpg.credits.name.tormenta"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgLive', {
-            msg: $i18n.t('rpg.credits.name.skyfall'),
+          $t("rpg.credits.description.rpgLive", {
+            msg: $i18n.t("rpg.credits.name.skyfall"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgLive', {
-            msg: $i18n.t('rpg.credits.name.mares'),
+          $t("rpg.credits.description.rpgLive", {
+            msg: $i18n.t("rpg.credits.name.mares"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgLive', {
-            msg: $i18n.t('rpg.credits.name.dado'),
+          $t("rpg.credits.description.rpgLive", {
+            msg: $i18n.t("rpg.credits.name.dado"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.rpgLive', {
-            msg: $i18n.t('rpg.credits.name.aop'),
+          $t("rpg.credits.description.rpgLive", {
+            msg: $i18n.t("rpg.credits.name.aop"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.stellaris'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.stellaris"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.hoi'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.hoi"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.tw2'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.tw2"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.gd'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.gd"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.dbd'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.dbd"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.civ'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.civ"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.victoria'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.victoria"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.war'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.war"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.borderlands'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.borderlands"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.bioshock'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.bioshock"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.gris'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.gris"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.northgard'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.northgard"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.divinite'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.divinite"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.game', {
-            msg: $i18n.t('rpg.credits.name.tlou'),
+          $t("rpg.credits.description.game", {
+            msg: $i18n.t("rpg.credits.name.tlou"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.sagaLibrary', {
-            msg: $i18n.t('rpg.credits.name.tw'),
+          $t("rpg.credits.description.sagaLibrary", {
+            msg: $i18n.t("rpg.credits.name.tw"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.library', {
-            msg: $i18n.t('rpg.credits.name.udc'),
+          $t("rpg.credits.description.library", {
+            msg: $i18n.t("rpg.credits.name.udc"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.library', {
-            msg: $i18n.t('rpg.credits.name.ag1'),
+          $t("rpg.credits.description.library", {
+            msg: $i18n.t("rpg.credits.name.ag1"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.library', {
-            msg: $i18n.t('rpg.credits.name.ag2'),
+          $t("rpg.credits.description.library", {
+            msg: $i18n.t("rpg.credits.name.ag2"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.library', {
-            msg: $i18n.t('rpg.credits.name.ag3'),
+          $t("rpg.credits.description.library", {
+            msg: $i18n.t("rpg.credits.name.ag3"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.library', {
-            msg: $i18n.t('rpg.credits.name.mill'),
+          $t("rpg.credits.description.library", {
+            msg: $i18n.t("rpg.credits.name.mill"),
           })
         }}
       </p>
       <p>
         {{
-          $t('rpg.credits.description.thesis', {
-            msg: $i18n.t('rpg.credits.name.pv'),
+          $t("rpg.credits.description.thesis", {
+            msg: $i18n.t("rpg.credits.name.pv"),
           })
         }}
       </p>
@@ -233,7 +235,7 @@
 }
 
 .credits > section > p::before {
-  content: '';
+  content: "";
   height: 8px;
   width: 8px;
   margin-right: 10px;

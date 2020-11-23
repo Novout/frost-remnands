@@ -6,21 +6,21 @@
           ? '#header'
           : localePath({ name: 'index' })
       "
-      >{{ $t('footer.home') }}</a
+      >{{ $t("footer.home") }}</a
     >
-    <nuxt-link :to="localePath({ name: 'rpg' })">{{
-      $t('footer.rpg')
-    }}</nuxt-link>
-    <nuxt-link :to="localePath({ name: 'news' })">{{
-      $t('footer.news')
-    }}</nuxt-link>
+    <nuxt-link :to="localePath({ name: 'rpg' })">
+      {{ $t("footer.rpg") }}
+    </nuxt-link>
+    <nuxt-link :to="localePath({ name: 'news' })">
+      {{ $t("footer.news") }}
+    </nuxt-link>
   </footer>
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent } from "@nuxtjs/composition-api";
 
-export default defineComponent({})
+export default defineComponent({});
 </script>
 
 <style scoped>

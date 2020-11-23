@@ -1,59 +1,59 @@
-import br from './lang/pt-BR.js'
-import en from './lang/en-US.js'
+import br from "./lang/pt-BR.js";
+import en from "./lang/en-US.js";
 
 export default {
-  target: 'static',
+  target: "static",
   head: {
-    title: 'Frost Remnands',
+    title: "Frost Remnands",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" },
     ],
     link: [
       {
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: '/frost-remnands/favicon.ico',
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/frost-remnands/favicon.ico",
       },
     ],
   },
 
-  css: ['~/assets/main.css', '~/assets/components.css'],
+  css: ["~/assets/main.css", "~/assets/components.css"],
 
   plugins: [],
 
   components: true,
 
   buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/composition-api',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/fontawesome',
-    '@nuxtjs/html-validator',
+    "@nuxtjs/eslint-module",
+    "@nuxtjs/stylelint-module",
+    "@nuxtjs/composition-api",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/fontawesome",
+    "@nuxtjs/html-validator",
   ],
 
-  modules: ['nuxt-i18n', '@nuxt/image'],
+  modules: ["nuxt-i18n", "@nuxt/image"],
 
   i18n: {
     detectBrowserLanguage: false,
     locales: [
       {
-        name: 'Português',
-        code: 'br',
-        iso: 'br',
+        name: "Português",
+        code: "br",
+        iso: "br",
       },
       {
-        name: 'English',
-        code: 'en',
-        iso: 'en',
+        name: "English",
+        code: "en",
+        iso: "en",
       },
     ],
-    defaultLocale: 'br',
+    defaultLocale: "br",
     vueI18n: {
-      fallbackLocale: 'br',
+      fallbackLocale: "br",
       messages: {
         br,
         en,
@@ -65,14 +65,14 @@ export default {
   image: {
     providers: {
       local: {
-        dir: '~/assets/images/',
+        dir: "~/assets/images/",
         clearCache: false,
       },
     },
   },
 
   router: {
-    base: '/frost-remnands/',
+    base: "/frost-remnands/",
   },
 
   googleFonts: {
@@ -93,20 +93,20 @@ export default {
   },
 
   fontawesome: {
-    component: 'fa',
+    component: "fa",
     suffix: true,
     icons: {
       solid: [
-        'faHome',
-        'faAdjust',
-        'faLanguage',
-        'faCat',
-        'faDragon',
-        'faGlobe',
-        'faMountain',
-        'faFlag',
-        'faCloud',
-        'faTrophy',
+        "faHome",
+        "faAdjust",
+        "faLanguage",
+        "faCat",
+        "faDragon",
+        "faGlobe",
+        "faMountain",
+        "faFlag",
+        "faCloud",
+        "faTrophy",
       ],
     },
   },
@@ -128,25 +128,25 @@ export default {
     usePrettier: false,
     options: {
       extends: [
-        'html-validate:document',
-        'html-validate:recommended',
-        'html-validate:standard',
+        "html-validate:document",
+        "html-validate:recommended",
+        "html-validate:standard",
       ],
       rules: {
-        'svg-focusable': 'off',
-        'no-unknown-elements': 'error',
+        "svg-focusable": "off",
+        "no-unknown-elements": "error",
         // Conflicts or not needed when using prettier formatting
-        'void-style': 'off',
-        'no-trailing-whitespace': 'off',
+        "void-style": "off",
+        "no-trailing-whitespace": "off",
         // Conflict with Nuxt defaults
-        'require-sri': 'off',
-        'attribute-boolean-style': 'off',
+        "require-sri": "off",
+        "attribute-boolean-style": "off",
         // Unreasonable rule
-        'no-inline-style': 'off',
-        'heading-level': 'off',
-        'attribute-allowed-values': 'off',
-        'no-dup-attr': 'off',
+        "no-inline-style": "off",
+        "heading-level": "off",
+        "attribute-allowed-values": "off",
+        "no-dup-attr": "off",
       },
     },
   },
-}
+};

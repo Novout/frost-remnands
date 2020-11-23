@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
-import SidebarItem from '@/components/rpg/SidebarItem'
+import { defineComponent } from "@nuxtjs/composition-api";
+import SidebarItem from "@/components/rpg/SidebarItem";
 
 export default defineComponent({
   components: {
     SidebarItem,
   },
-})
+});
 </script>
 
 <style scoped>

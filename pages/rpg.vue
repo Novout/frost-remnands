@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent } from "@nuxtjs/composition-api";
 
 export default defineComponent({
-  layout: 'rpg',
+  layout: "rpg",
   head() {
     return {
-      title: this.$i18n.t('default.head.rpg'),
-    }
+      title: this.$i18n.t("default.head.rpg"),
+    };
   },
-})
+});
 </script>
 
 <style scoped>

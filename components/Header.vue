@@ -2,15 +2,15 @@
   <header id="header" class="header">
     <h1 id="title">Frost Remnands</h1>
     <section>
-      <nuxt-link :to="localePath({ name: 'index' })">{{
-        $t('header.home')
-      }}</nuxt-link>
-      <nuxt-link :to="localePath({ name: 'rpg' })">{{
-        $t('header.rpg')
-      }}</nuxt-link>
-      <nuxt-link :to="localePath({ name: 'news' })">{{
-        $t('header.news')
-      }}</nuxt-link>
+      <nuxt-link :to="localePath({ name: 'index' })">
+        {{ $t("header.home") }}
+      </nuxt-link>
+      <nuxt-link :to="localePath({ name: 'rpg' })">
+        {{ $t("header.rpg") }}
+      </nuxt-link>
+      <nuxt-link :to="localePath({ name: 'news' })">
+        {{ $t("header.news") }}
+      </nuxt-link>
       <fa-icon icon="adjust" size="2x" @click.prevent="colorMode" />
       <a
         v-for="locale in availableLocales"
@@ -23,31 +23,34 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent } from "@nuxtjs/composition-api";
 
 export default defineComponent({
   computed: {
     availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
     },
   },
   methods: {
     colorMode() {
-      this.$colorMode.preference === 'light'
-        ? (this.$colorMode.preference = 'dark')
-        : (this.$colorMode.preference = 'light')
+      this.$colorMode.preference === "light"
+        ? (this.$colorMode.preference = "dark")
+        : (this.$colorMode.preference = "light");
     },
     switchLanguage(code) {
-      if (this.$route.fullPath.includes('#about')) {
-        if (this.$route.fullPath.includes('/en')) this.$router.push('/')
-        else this.$router.push('/en')
+      if (this.$route.fullPath.includes("#about")) {
+        if (this.$route.fullPath.includes("/en")) {
+          this.$router.push("/");
+        } else {
+          this.$router.push("/en");
+        }
 
-        return
+        return;
       }
-      this.$router.push(this.switchLocalePath(code))
+      this.$router.push(this.switchLocalePath(code));
     },
   },
-})
+});
 </script>
 
 <style scoped>
@@ -82,8 +85,8 @@ export default defineComponent({
 
 .header > section > a {
   color: var(--font-primary);
-  font-family: 'Raleway', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Raleway", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   padding: 0 20px;
