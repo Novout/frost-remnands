@@ -1,8 +1,7 @@
 <template>
-  <section>
+  <section class="anim">
     <Header />
     <main>
-      <Sidebar />
       <transition name="rpg" mode="out-in">
         <Nuxt />
       </transition>
@@ -13,7 +12,6 @@
 <script>
 import { defineComponent } from "@nuxtjs/composition-api";
 import Header from "@/components/Header";
-import Sidebar from "@/components/rpg/Sidebar";
 
 export default defineComponent({
   transition: {
@@ -23,17 +21,21 @@ export default defineComponent({
   colorMode: "dark",
   components: {
     Header,
-    Sidebar,
-  },
-  computed: {
-    availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
-    },
   },
 });
 </script>
 
 <style scoped>
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
+
+.anim {
+  animation: 1s appear;
+}
+
 main {
   display: flex;
 }

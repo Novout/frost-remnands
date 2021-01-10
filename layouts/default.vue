@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="anim">
     <Header />
     <Nuxt />
     <Footer />
@@ -20,6 +20,16 @@ export default defineComponent({
 </script>
 
 <style>
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
+
+.anim {
+  animation: 1s appear;
+}
+
 body {
   background: url("../assets/landing.png");
   background-size: cover;

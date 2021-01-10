@@ -35,6 +35,8 @@ body {
   --rpg-button-hover: rgb(255, 255, 255);
   --rpg-button-disabled: rgba(53, 73, 94, 0.3);
   --rpg-button-disabled-hover:  rgba(255, 255, 255, 0.3);
+  --card-hover: rgba(255, 255, 255, 0.1);
+  --card-focus: #000;
 }
 
 .dark-mode {
@@ -60,6 +62,8 @@ body {
   --rpg-button-hover: rgb(0, 0, 0);
   --rpg-button-disabled: rgba(255, 255, 255, 0.3);
   --rpg-button-disabled-hover:  rgba(0, 0, 0, 0.3);
+  --card-hover: rgba(255, 255, 255, 0.1);
+  --card-focus: #FFF;
 }
 
 :root::-webkit-scrollbar {

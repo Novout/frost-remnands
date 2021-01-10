@@ -1,15 +1,12 @@
 <template>
   <header id="header" class="header">
-    <h1 id="title">Frost Remnands</h1>
+    <h1 id="title">{{ $t("header.title") }}</h1>
     <section>
       <nuxt-link :to="localePath({ name: 'index' })">
         {{ $t("header.home") }}
       </nuxt-link>
       <nuxt-link :to="localePath({ name: 'rpg' })">
         {{ $t("header.rpg") }}
-      </nuxt-link>
-      <nuxt-link :to="localePath({ name: 'news' })">
-        {{ $t("header.news") }}
       </nuxt-link>
       <fa-icon icon="adjust" size="2x" @click.prevent="colorMode" />
       <a

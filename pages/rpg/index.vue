@@ -1,69 +1,76 @@
 <template>
-  <section class="container__rpg">
-    <h1 class="h1">
-      {{ $t("rpg.index.title") }}
-    </h1>
-    <span class="span">{{ $t("rpg.index.description") }}</span>
-    <section class="container__card">
-      <article class="card">
-        <h2 class="h2">
-          {{ $t("rpg.index.playerbook.card.title") }}
-        </h2>
-        <span>{{ $t("rpg.index.playerbook.card.description") }}</span>
-        <section class="button-container">
-          <a class="button-secondary" href="https://www.dropbox.com/s/?dl=1">{{
-            $t("rpg.index.playerbook.card.buttonBR")
-          }}</a>
-          <a
-            class="button-secondary-disabled"
-            href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t("rpg.index.playerbook.card.buttonEN") }}</a
-          >
-        </section>
-      </article>
-      <article class="card">
-        <h2 class="h2">
-          {{ $t("rpg.index.gmbook.card.title") }}
-        </h2>
-        <span>{{ $t("rpg.index.gmbook.card.description") }}</span>
-        <section class="button-container">
-          <a
-            class="button-secondary-disabled"
-            href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t("rpg.index.gmbook.card.buttonBR") }}</a
-          >
-          <a
-            class="button-secondary-disabled"
-            href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t("rpg.index.gmbook.card.buttonEN") }}</a
-          >
-        </section>
-      </article>
-      <article class="card">
-        <h2 class="h2">
-          {{ $t("rpg.index.desktop.card.title") }}
-        </h2>
-        <span>{{ $t("rpg.index.desktop.card.description") }}</span>
-        <section class="button-container">
-          <a class="button-secondary" href="https://www.dropbox.com/s/?dl=1">{{
-            $t("rpg.index.desktop.card.buttonBR")
-          }}</a>
-          <a
-            class="button-secondary-disabled"
-            href="https://www.dropbox.com/s/?dl=1"
-            >{{ $t("rpg.index.desktop.card.buttonEN") }}</a
-          >
-        </section>
-      </article>
+  <main class="main">
+    <section class="main__container">
+      <Card
+        color="#3B86F3"
+        :title="$i18n.t('rpg.playerbook.title')"
+        :description="$i18n.t('rpg.playerbook.description')"
+        version="v1.0.0"
+        link="https://www.dropbox.com/s/q6t0vfmksu2yx5t/Restos%20da%20Geada%20-%20Livro%20do%20Jogador%20-%20v1.0.0.pdf?dl=1"
+      />
+      <Card
+        color="#783BF3"
+        :title="$i18n.t('rpg.masterbook.title')"
+        :description="$i18n.t('rpg.masterbook.description')"
+        :disabled="true"
+        version="v0.1.0"
+      />
+      <Card
+        color="#F3863B"
+        :title="$i18n.t('rpg.compendium.title')"
+        :description="$i18n.t('rpg.compendium.description')"
+        :disabled="true"
+        version="v0.1.0"
+      />
     </section>
-  </section>
+  </main>
 </template>
 
+<script>
+import Card from "@/components/rpg/Card";
+
+export default {
+  components: {
+    Card,
+  },
+  head() {
+    return {
+      title: this.$i18n.t("default.head.rpg"),
+    };
+  },
+};
+</script>
+
 <style scoped>
-.button-container {
+.main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 190px);
+  width: 100%;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: auto;
+  width: 80vw;
+}
+
+@media (max-width: 1024px) {
+  .main__container {
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }
 </style>

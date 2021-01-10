@@ -72,7 +72,7 @@ export default {
   },
 
   router: {
-    base: "/frost-remnands/",
+    base: "/frost-remnands",
   },
 
   googleFonts: {
@@ -107,6 +107,7 @@ export default {
         "faFlag",
         "faCloud",
         "faTrophy",
+        "faDownload",
       ],
     },
   },
