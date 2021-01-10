@@ -5,6 +5,7 @@ export default {
     },
     head: {
       index: "Frost Remnands - Home",
+      description: "Fantasy scenery Frost Remnands",
       rpg: "Frost Remnands - RPG",
       news: "Frost Remnands - Novidades",
     },

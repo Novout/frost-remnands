@@ -54,6 +54,13 @@ export default defineComponent({
   head() {
     return {
       title: this.$i18n.t("default.head.index"),
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$i18n.t("default.head.description"),
+        },
+      ],
     };
   },
 });

@@ -5,6 +5,7 @@ export default {
     },
     head: {
       index: "Restos da Geada - Início",
+      description: "Cenário de fantasia Restos da Geada",
       rpg: "Restos da Geada - RPG",
       news: "Restos da Geada - Novidades",
     },
