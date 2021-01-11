@@ -7,7 +7,7 @@ export default {
     playerbook: {
       title: "Livro do Jogador",
       description:
-        "Baixe agora o Livro do Jogador baseado na quinta edição de D&D, onde tem tudo o que é necessário para fazer sem personagem em Restos da Geada.",
+        "Baixe agora o Livro do Jogador baseado na quinta edição de D&D, onde tem tudo o que é necessário para fazer seu personagem em Restos da Geada.",
     },
     masterbook: {
       title: "Livro do Mestre",
@@ -17,7 +17,7 @@ export default {
     compendium: {
       title: "Aplicativo Desktop",
       description:
-        "Feito para a versão da quinta edição de D&D, crie e gerencie a ficha de seus personagens de uma forma facilitade e rápida.",
+        "Feito exclusivo para o cenário, crie e gerencie a ficha de seus personagens de uma forma facilitada e rápida.",
     },
   },
 };
