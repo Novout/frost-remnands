@@ -109,6 +109,7 @@ export default {
         "faTrophy",
         "faDownload",
       ],
+      brands: ["faGithub"],
     },
   },
 

@@ -19,8 +19,10 @@
         color="#F3863B"
         :title="$i18n.t('rpg.compendium.title')"
         :description="$i18n.t('rpg.compendium.description')"
-        :disabled="true"
-        version="v0.1.0"
+        :github="true"
+        version="v1.1.0"
+        link="https://www.dropbox.com/s/aia4zvzd4kevjci/Restos%20da%20Geada%20-%20RPG%20Setup%201.1.0.exe?dl=1"
+        github-link="https://github.com/Novout/frost-remnands-desktop"
       />
     </section>
   </main>

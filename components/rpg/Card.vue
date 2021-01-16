@@ -9,6 +9,16 @@
       </p>
     </section>
     <CardButton
+      v-if="github"
+      style="flex-grow: 1"
+      :icon="['fab', 'github']"
+      :title="$i18n.t('rpg.default.github', { version })"
+      :link="githubLink"
+      :disabled="disabled"
+      :github="true"
+    />
+    <CardButton
+      style="flex-grow: 1"
       :icon="['download', 'lg']"
       :title="$i18n.t('rpg.default.download', { version })"
       :link="link"
@@ -50,6 +60,16 @@ export default {
       required: false,
       default: false,
       type: Boolean,
+    },
+    github: {
+      required: false,
+      default: false,
+      type: Boolean,
+    },
+    githubLink: {
+      required: false,
+      default: "",
+      type: String,
     },
   },
 };

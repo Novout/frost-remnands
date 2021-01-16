@@ -1,6 +1,7 @@
 <template>
   <article class="item" :class="disable" @click.prevent="url">
-    <fa-icon :icon="icon[0]" :size="icon[1]" />
+    <fa-icon v-if="github" :icon="githubIcon" size="lg" />
+    <fa-icon v-else :icon="icon[0]" :size="icon[1]" />
     <p v-if="!disabled">{{ title }}</p>
     <p v-else>{{ $t("rpg.default.disabled") }}</p>
   </article>
@@ -8,6 +9,7 @@
 
 <script>
 import { defineComponent, computed } from "@nuxtjs/composition-api";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default defineComponent({
   props: {
@@ -34,6 +36,11 @@ export default defineComponent({
       default: false,
       type: Boolean,
     },
+    github: {
+      required: false,
+      default: false,
+      type: Boolean,
+    },
   },
   setup(props) {
     const url = () => {
@@ -44,7 +51,9 @@ export default defineComponent({
       return props.disabled ? "download-off" : "";
     });
 
-    return { url, disable };
+    const githubIcon = computed(() => faGithub);
+
+    return { url, disable, githubIcon };
   },
 });
 </script>

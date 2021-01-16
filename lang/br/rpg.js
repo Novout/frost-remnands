@@ -1,6 +1,7 @@
 export default {
   rpg: {
     default: {
+      github: "Código Fonte",
       download: "Baixar {version}",
       disabled: "Indisponível",
     },
