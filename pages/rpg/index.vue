@@ -12,8 +12,8 @@
         color="#783BF3"
         :title="$i18n.t('rpg.masterbook.title')"
         :description="$i18n.t('rpg.masterbook.description')"
-        :disabled="true"
         version="v0.1.0"
+        link="https://www.dropbox.com/s/8a0snw00ofprtv5/Restos%20da%20Geada%20-%20Livro%20do%20Mestre%20v.0.1.0.pdf?dl=1"
       />
       <Card
         color="#F3863B"
